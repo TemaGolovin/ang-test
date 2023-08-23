@@ -20,4 +20,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Demo
 
-ang-test-3kgnjwmyl-temagolovin.vercel.app
+[Click to demonstration app](https://ang-test-pjkmk4nq1-temagolovin.vercel.app/)

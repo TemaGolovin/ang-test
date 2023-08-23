@@ -1,0 +1,14 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.conteiner {
+  margin: 0 auto;
+  padding: 0 20%;
+}
+
+@media (max-width: 771px) {
+  .conteiner {
+    padding: 0;
+  }
+}

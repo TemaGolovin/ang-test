@@ -1,0 +1,40 @@
+<div class="data">
+  <p><b>username:</b> atuny0</p>
+  <p><b>password:</b> 9uQFF1Lh</p>
+</div>
+<mat-card class="login-card">
+  <mat-card-content>
+    <form [formGroup]="loginForm" class="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>
+          Username: <br />
+          <input
+            id="username"
+            type="username"
+            formControlName="username"
+            (input)="onChangeUsername()"
+          />
+        </label>
+        <div *ngIf="usernameValid" class="invalid feedback">Required field</div>
+      </div>
+
+      <div class="form-group">
+        <label>
+          Password: <br />
+          <input
+            id="password"
+            type="password"
+            formControlName="password"
+            (input)="onChangePassword()"
+            autocomplete="off"
+          />
+        </label>
+        <div *ngIf="passwordValid" class="invalid feedback">Required field</div>
+        <div *ngIf="authError" class="invalid feedback">Incorrect username and/or password</div>
+      </div>
+      <mat-card-actions class="login-button">
+        <button mat-raised-button color="primary">Log In</button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>

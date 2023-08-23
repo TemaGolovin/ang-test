@@ -1,0 +1,16 @@
+<nav>
+  <mat-toolbar color="primary" class="conteiner">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      (click)="goHome()"
+    >
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>Your social media</span>
+    <span class="spacer"></span>
+    <button *ngIf="!isAuth" mat-raised-button routerLink="login" (click)="goLogin()">Log In</button>
+    <button *ngIf="isAuth" mat-raised-button routerLink="login" (click)="logOut()">Log Out</button>
+  </mat-toolbar>
+</nav>

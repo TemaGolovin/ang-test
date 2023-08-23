@@ -1,0 +1,8 @@
+<main class="conteiner">
+  <app-post
+    *ngFor="let post of postsRes"
+    [title]="post.title"
+    [body]="post.body"
+    [id]="post.id"
+  ></app-post>
+</main>
